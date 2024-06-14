@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3co家族</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .title {
+            font-size: 3em;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2d55, 0 0 40px #ff2d55, 0 0 50px #ff2d55, 0 0 60px #ff2d55, 0 0 70px #ff2d55;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2d55, 0 0 40px #ff2d55, 0 0 50px #ff2d55, 0 0 60px #ff2d55, 0 0 70px #ff2d55;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff2d55, 0 0 40px #ff2d55, 0 0 50px #ff2d55, 0 0 60px #ff2d55, 0 0 70px #ff2d55, 0 0 80px #ff2d55;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">3co家族天下无双</div>
+        <style>
         * {
             margin: 0;
             padding: 0;
@@ -73,9 +108,7 @@
     <div class="shell">
         <div class="cloud"></div>
     </div>
-
     <script>
-
         function randomText() {
             const text = '唱跳篮球';
             const letter = text[Math.floor(Math.random() * text.length)];
@@ -99,9 +132,6 @@
             }, 2000);
         }
         setInterval(rain, 20); 
-
-
     </script>
 </body>
-
 </html>
